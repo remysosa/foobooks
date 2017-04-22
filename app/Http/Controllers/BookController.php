@@ -15,4 +15,12 @@ class BookController extends Controller
     public function show($title) {
         return view('books.show')->with(['title' => $title]);
     }
+
+    /**
+	* GET
+    * /search
+	*/
+    public function search() {
+        return view('books.search');
+    }
 }
